@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo">🛒 E-Shop Admin</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="cart.html">Cart</a>
+</nav>
+</header>
+
+<div class="login-container">
+
+<h2>Admin Dashboard</h2>
+
+<input type="text" id="productName" placeholder="Product Name">
+
+<input type="number" id="productPrice" placeholder="Product Price">
+
+<button onclick="addProduct()">Add Product</button>
+
+</div>
+
+<section class="featured">
+
+<h2>Product List</h2>
+
+<div id="adminProducts" class="products">
+
+</div>
+
+</section>
+
+<script src="js/admin.js"></script>
+
+</body>
+</html>

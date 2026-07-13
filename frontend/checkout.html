@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🛒 E-Shop</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="products.html">Products</a>
+
+<a href="cart.html">Cart</a>
+
+</nav>
+
+</header>
+
+<div class="login-container">
+
+<h2>Checkout</h2>
+
+<input type="text" placeholder="Full Name">
+
+<input type="text" placeholder="Address">
+
+<input type="text" placeholder="Phone Number">
+
+<button onclick="placeOrder()">Place Order</button>
+
+</div>
+
+<script>
+
+function placeOrder(){
+
+    const name = document.querySelectorAll("input")[0].value;
+    const address = document.querySelectorAll("input")[1].value;
+    const phone = document.querySelectorAll("input")[2].value;
+
+    if(name === "" || address === "" || phone === ""){
+        alert("Please fill all fields");
+        return;
+    }
+
+    if(phone.length !== 10 || isNaN(phone)){
+        alert("Please enter a valid 10-digit phone number");
+        return;
+    }
+
+    alert("Order Placed Successfully");
+
+    localStorage.removeItem("cart");
+
+    window.location.href = "index.html";
+}
+
+</script>
+
+</body>
+
+</html>

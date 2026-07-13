@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register | E-Shop</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🛒 E-Shop</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="cart.html">Cart</a>
+<a href="login.html">Login</a>
+</nav>
+
+</header>
+
+<div class="login-container">
+
+<h2>Create Account</h2>
+
+<input type="text" id="name" placeholder="Full Name">
+
+<input type="email" id="email" placeholder="Email">
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="register()">Register</button>
+
+<p>Already have an account?
+
+<a href="login.html">Login</a>
+
+</p>
+
+</div>
+
+<script>
+
+function register(){
+
+const name=document.getElementById("name").value;
+const email=document.getElementById("email").value;
+const password=document.getElementById("password").value;
+
+if(name==="" || email==="" || password===""){
+
+alert("Please fill all fields");
+
+return;
+
+}
+
+alert("Registration Successful");
+
+window.location.href="login.html";
+
+}
+
+</script>
+
+</body>
+</html>

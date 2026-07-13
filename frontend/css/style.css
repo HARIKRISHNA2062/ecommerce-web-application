@@ -1,0 +1,201 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navbar */
+
+header{
+    background:#007bff;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+    background:white;
+}
+
+.hero h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    margin-bottom:25px;
+    font-size:18px;
+}
+
+.btn{
+    background:#28a745;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* Products */
+
+.featured{
+    padding:50px;
+}
+
+.featured h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.products{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    width:220px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.card p{
+    color:#007bff;
+    font-weight:bold;
+}
+
+/* Footer */
+
+footer{
+    margin-top:40px;
+    background:#007bff;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+.card button{
+    background:#28a745;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-top:10px;
+    font-size:15px;
+}
+
+.card button:hover{
+    background:#218838;
+}
+.checkout-btn{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+/* Login */
+
+.login-container{
+
+    width:350px;
+
+    margin:60px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:10px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+
+    text-align:center;
+
+}
+
+.login-container h2{
+
+    margin-bottom:20px;
+
+}
+
+.login-container input{
+
+    width:100%;
+
+    padding:12px;
+
+    margin:10px 0;
+
+    border:1px solid #ccc;
+
+    border-radius:5px;
+
+}
+
+.login-container button{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    background:#007bff;
+
+    color:white;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    margin-top:10px;
+
+}
+
+.login-container button:hover{
+
+    background:#0056b3;
+
+}
+
+.login-container p{
+
+    margin-top:15px;
+
+}
